@@ -1,6 +1,10 @@
 
 const views = require('express').Router();
 
+views.get('/', function(req, res, next) {
+    res.render('dashboard');
+});
+
 views.get('/dashboard', function(req, res, next) {
     res.render('dashboard');
 });
