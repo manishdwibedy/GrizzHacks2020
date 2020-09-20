@@ -1,3 +1,4 @@
+
 const views = require('express').Router();
 
 views.get('/dashboard', function(req, res, next) {
@@ -22,5 +23,10 @@ views.get('/profile', function(req, res, next) {
 views.get('/contact', function(req, res, next) {
     res.render('contact');
 });
-
+views.get('/login', function(req, res, next) {
+    res.render('login');
+});
+views.get('/register', function(req, res, next) {
+    res.render('register');
+});
 module.exports = views;
