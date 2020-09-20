@@ -19,5 +19,8 @@ views.get('/patient-details', function(req, res, next) {
 views.get('/profile', function(req, res, next) {
     res.render('profile');
 });
+views.get('/contact', function(req, res, next) {
+    res.render('contact');
+});
 
 module.exports = views;
